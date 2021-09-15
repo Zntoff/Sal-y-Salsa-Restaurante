@@ -5,7 +5,7 @@
 }
 
 .main-container{
-	background-color: #121213;
+	background-color: #F09D51;
 	
 }
 
@@ -24,17 +24,20 @@ position:absolute;
 }
 
 .main-title{
-	color: #E8E9EB
+	color: #010307;
+	text-align: center;
+	padding-top: 1rem;
 }
 #container{
 	margin: 2rem;
 	border-radius: 5px;
 	padding: 2rem 1.5rem 2rem 1.5rem;
-	background-color: #313638;
+	background-color: #121213;
+	background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffba08' fill-opacity='0.06'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 /* card custom*/
 .card{
-	background-color: #F09D51;
+	background-color: #FFBA08;
 	border-radius: 5px;
 	margin: 0.5rem;
 	box-shadow: black;
@@ -42,7 +45,7 @@ position:absolute;
 .card-title{
 	color: #000;
 }
-.card-content{
+.card-p{
 	color: #000
 }
 
@@ -61,4 +64,13 @@ position:absolute;
 }
 footer{
 	background-color: #F06543;
+}
+
+
+/*Responsive*/
+
+@media (width: 500px){
+	.text-buttom {
+		font-size: 10px;
+	}
 }
