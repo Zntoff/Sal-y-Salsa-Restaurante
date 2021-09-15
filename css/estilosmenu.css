@@ -4,6 +4,11 @@
 	background: #F06543;
 }
 
+.main-container{
+	background-color: #121213;
+	
+}
+
 .map-container-3{
 overflow:hidden;
 padding-bottom:56.25%;
@@ -16,4 +21,44 @@ top:0;
 height:100%;
 width:100%;
 position:absolute;
+}
+
+.main-title{
+	color: #E8E9EB
+}
+#container{
+	margin: 2rem;
+	border-radius: 5px;
+	padding: 2rem 1.5rem 2rem 1.5rem;
+	background-color: #313638;
+}
+/* card custom*/
+.card{
+	background-color: #F09D51;
+	border-radius: 5px;
+	margin: 0.5rem;
+	box-shadow: black;
+}
+.card-title{
+	color: #000;
+}
+.card-content{
+	color: #000
+}
+
+/* modal custom */
+
+.modal-header{
+	background-color: #F06543;
+	color:cornsilk;
+}
+.modal-body{
+	background-color: #121213;
+	color: white;
+}
+.modal-footer{
+	background-color: #121213;
+}
+footer{
+	background-color: #F06543;
 }
