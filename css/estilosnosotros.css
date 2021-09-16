@@ -110,3 +110,6 @@ blockquote:after {
     color:#F06543;
 }
 
+
+.carousel-control-next-icon{background-image:url(../insumos/arrow_right.svg)}
+.carousel-control-prev-icon{background-image:url(../insumos/arrow_left.svg)}
