@@ -19,128 +19,265 @@
   
    <link rel="stylesheet" href="css/estilosmenu.css">
 </head>
-<body> 
+<body class="main-container"> 
 <!-- Codigo MDBootstrap-->
 <!--cabezera-->
-<header>
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><strong>Sal&Salsa</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
-        aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse offset-4" id="navbarSupportedContent-7">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio </a>
-              </li>
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><strong>Sal&Salsa</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+          aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent-7">
+          <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="menu.html">Menú<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                  <a class="nav-link" href="contactenos.html">Contactenos</a>
                 </li>
-        </ul>
-        <form class="form-inline">
-          <div class="md-form my-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-          </div>
-        </form>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="menu.html">Menú<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactenos.html">Contactenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mapa.html">Mapa</a>
+                  </li>
+          </ul>
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav><br><br>
+  </header>
+
+  <div class="titulo mt-5">
+    <div class="row">
+      <h2 class="main-title text-title ml-4 col-6 text-lg-end"><strong>Nuestro menú</strong></h2>
+      <a class="btn btn-success col-4 text-buttom" href="/Reto-1-JuvenTIC/insumos/menu-download.pdf" download="menu.pdf" role="button">Descarga en PDF <i class="fa fa-download" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+<!-- Cards -->
+  <section id="container">
+    <div class="cards-container row flex-center">
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+        <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
+        <div class="card-body">
+          <h5 class="card-title text-lg-center">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  <!-- Modal -->
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Plato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="/Reto-1-JuvenTIC/insumos/foto1@2x.png"  class="figure-img img-fluid rounded" alt="Platillo X">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea beatae voluptate facilis quas deserunt quia quidem! Cum facere enim quas ratione modi, fuga facilis explicabo accusantium? Unde pariatur architecto totam.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-success" href="contactenos.html" role="button">Preguntas? Contactenos.</a>
+        </div>
       </div>
     </div>
-  </nav><br><br>
-
-<div class="container my-5">
-
-  <section>
-    
-    
-  </section>
-
-</div>
-
+  </div>
 
 
 
 <!--pie de pagina-->
 
+  <footer class="page-footer font-small">
 
-<footer class="page-footer font-small indigo">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+    
+      <!-- Grid row -->
+      <div class="row">
 
-   <!-- Footer Links -->
-   <div class="container text-center text-md-left">
-  
-    <!-- Grid row -->
-    <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
 
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Mapa del sitio</h5>
 
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Mapa del sitio</h5>
+          <ul class="list-unstyled">
+          
+          </ul>
 
-        <ul class="list-unstyled">
-         
-        </ul>
+        </div>
+        <!-- Grid column -->
+
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contactanos</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">tell: (+1) 1008 588 684</a>
+            </li>
+            <li>
+              <a href="#!">correo: emaildecontacto@gmail.com</a>
+            </li>
+            <li>
+              <a href="#!">Estamos en: 632 calle principal</p>
+                                            New York, 9412
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
 
       </div>
-      <!-- Grid column -->
-
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contactanos</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">tell: (+1) 1008 588 684</a>
-          </li>
-          <li>
-            <a href="#!">correo: emaildecontacto@gmail.com</a>
-          </li>
-          <li>
-            <a href="#!">Estamos en: 632 calle principal</p>
-                                          New York, 9412
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
+      <!-- Grid row -->
 
     </div>
-    <!-- Grid row -->
+    <!-- Footer Links -->
 
-  </div>
-  <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
+    </div>
+    <!-- Copyright -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2021 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
-  </div>
-  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!--fin pie de pagina-->
 
-</footer>
-<!-- Footer -->
-<!--fin pie de pagina-->
-
-
-
-
-
-<!--Codigo MDBootstrap -->
-<!-- Main navigation -->
+  <!--Codigo MDBootstrap -->
+  <!-- Main navigation -->
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
