@@ -44,3 +44,13 @@ position:absolute;
 	color: #fff;
 	padding-top: 2em;
 }
+
+.list-group-item{
+	background-color: #121213;
+	border-radius: 5px;
+}
+
+.btn{
+	background-color: #f8f8f8;
+	color:#f8f8f8
+}
