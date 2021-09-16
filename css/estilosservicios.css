@@ -17,3 +17,33 @@ height:100%;
 width:100%;
 position:absolute;
 }
+
+
+.contenedor-servicios{
+    display:flex;
+	flex-wrap: wrap;
+   
+}
+
+.servicios{
+    flex-basis: calc(33.3% - 1rem);
+     border-style:solid ;
+     border-color: #b5b5b5;
+     border-width: 0.1rem;
+     background:#f5f5f5;
+    }
+/*botones*/
+.d-block{
+    display: block !important;
+}
+.boton{
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #F06543;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+   display: inline-block;
+   text-align: center;
+
+}
