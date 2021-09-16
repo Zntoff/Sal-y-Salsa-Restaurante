@@ -5,7 +5,7 @@
 }
 
 .main-container{
-	background-color: #F09D51;
+	background-color: #fff;
 	
 }
 
@@ -37,7 +37,7 @@ position:absolute;
 }
 /* card custom*/
 .card{
-	background-color: #FFBA08;
+	background-color: #F09D51;
 	border-radius: 5px;
 	margin: 0.5rem;
 	box-shadow: black;

@@ -4,7 +4,7 @@
 	background: #F06543;
 }
 .main-content{
-	background-color: #F09D51;
+	background-color: #f8f8f8;
 }
 .map-container-3{
 overflow:hidden;
@@ -26,6 +26,7 @@ position:absolute;
 	background-color: #121213;
 	background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffba08' fill-opacity='0.06'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 	padding: 2rem;
+	border-radius:5px
 }
 .titulito{
 	padding-top: -10em;
@@ -36,6 +37,7 @@ position:absolute;
 
 .card{
 	margin: 1em;
+	background-color: #F09D51;
 }
 .plis{
 	text-align: center;
