@@ -17,3 +17,39 @@ height:100%;
 width:100%;
 position:absolute;
 }
+
+
+@media (min-width: 768px) {
+
+	.contacto{
+		margin-bottom: 9.7rem;
+	}
+
+}
+
+
+.contacto h1{
+	font-weight: bold;
+	padding: 2.5rem 0;
+}
+
+
+.form-contacto{
+	background-color: #E8E9EB;
+	padding: 3rem;
+	border-radius: 1rem;
+}
+
+
+.btnEnviar{
+	text-align: right;
+
+}
+
+.btnEnviar button{
+	background: #F06543;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+
