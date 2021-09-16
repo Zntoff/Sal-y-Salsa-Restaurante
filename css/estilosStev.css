@@ -6,6 +6,13 @@
 	height: 600px;
 }
 
+.jumbotron2
+{
+	background-image: url(../insumos/foto3@2x.png);
+	background-size: auto auto;
+	height: auto;
+}
+
 .galeria
 {
 	position: relative;
@@ -30,4 +37,27 @@
 	background: rgba(255, 166, 0, 0.5);
 	transition: all 1s ease;
 }
+
+.testimonial{
+	text-align: center;
+	padding: 2rem;
+}
+
+.testimonial-nombre{
+	font-weight: bold;
+}
+
+blockquote:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:3rem;
+    color:#F06543;
+} 
+blockquote:after { 
+    content: close-quote;
+    font-weight: bold;
+    font-size:3rem;
+    color:#F06543;
+}
+
 
