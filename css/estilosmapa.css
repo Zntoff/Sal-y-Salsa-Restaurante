@@ -54,3 +54,18 @@ position:absolute;
 	background-color: #f8f8f8;
 	color:#f8f8f8
 }
+
+.iconos1 {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 30px;
+	background: #F06543;
+	padding-top: 5px;
+	padding-bottom:  10px;
+	border: 0px solid #000000;
+	display:flex;
+	justify-content: center;
+  
+  }

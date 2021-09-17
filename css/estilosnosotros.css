@@ -113,3 +113,18 @@ blockquote:after {
 
 .carousel-control-next-icon{background-image:url(../insumos/arrow_right.svg)}
 .carousel-control-prev-icon{background-image:url(../insumos/arrow_left.svg)}
+
+.iconos1 {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 30px;
+	background: #F06543;
+	padding-top: 5px;
+	padding-bottom:  10px;
+	border: 0px solid #000000;
+	display:flex;
+	justify-content: center;
+  
+  }
