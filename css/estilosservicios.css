@@ -18,6 +18,11 @@ width:100%;
 position:absolute;
 }
 
+h1{
+	font-weight: bold;
+	padding: 1.5rem 0;
+}
+
 
 .contenedor-servicios{
     display:flex;
@@ -25,13 +30,23 @@ position:absolute;
    
 }
 
+
 .servicios{
     flex-basis: calc(33.3% - 1rem);
-     border-style:solid ;
-     border-color: #b5b5b5;
-     border-width: 0.1rem;
-     background:#f5f5f5;
-    }
+    border-style:solid ;
+    border-color: #b5b5b5;
+    border-width: 0.1rem;
+    background:#f5f5f5;
+    text-align: center;
+    gap : 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+
+.servicios h5{
+    font-weight: bold;
+}
 /*botones*/
 .d-block{
     display: block !important;
@@ -40,7 +55,7 @@ position:absolute;
     color: #ffffff;
     font-weight: 700;
     background-color: #F06543;
-    font-size: 1.8rem;
+    font-size: 1rem;
     padding: 1rem 3rem;
     margin-top: 2rem;
    display: inline-block;
@@ -62,3 +77,5 @@ position:absolute;
 	justify-content: center;
   
   }
+
+  
