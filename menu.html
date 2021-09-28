@@ -16,8 +16,8 @@
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
-  
-   <link rel="stylesheet" href="css/estilosmenu.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilosmenu.css">
 </head>
 <body class="main-container"> 
 <!-- Codigo MDBootstrap-->
@@ -46,22 +46,40 @@
                   <a class="nav-link" href="servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactenos.html">Contactenos</a>
+                    <a class="nav-link" href="contactenos.html">Contáctenos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="mapa.html">Mapa</a>
                   </li>
+                  <li>
+                  <form class="form-inline">
+                      <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                      </div>
+                    </form>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="carrito.html"><img class="icon-cart" src="insumos/cart.png" alt="carritocompras"></a>
+                  </li>
           </ul>
-          <form class="form-inline">
-            <div class="md-form my-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-            </div>
-          </form>
+         
         </div>
       </div>
     </nav><br><br>
-  </header>
 
+</header>
+
+
+  <div class="fixed iconos1">
+    <!--Facebook-->
+    <a class="fb-ic mr-3" href="https://www.facebook.com/" role="button"><i class="icono1 fab fa-lg fa-facebook-f text-white"></i></a>
+    <!--Twitter-->
+    <a class="tw-ic mr-3" href="https://twitter.com/search?q=sneakers&src=typed_query" role="button"><i class="icono2 fab fa-lg fa-twitter text-white"></i></a>
+    <!--Instagram-->
+    <a class="ins-ic mr-3" href="https://www.instagram.com/sneaker_.store/" role="button"><i class="icono3 fab fa-lg fa-instagram text-white"></i></a>
+    <!--Youtube-->
+    <a class="yt-ic mr-3" href="https://www.youtube.com/channel/UC2IDkGu61j_mwNJOc54Sb5w" role="button"><i class="icono4 fab fa-lg fa-youtube text-white"></i></a>
+  </div> 
 
   <div class="titulo mt-5">
     <div class="row">
@@ -74,113 +92,225 @@
   <section id="container">
     <div class="cards-container row flex-center">
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 1</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$13000</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="1">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 2</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$14000</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="2">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 3</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$11000</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="3">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 4</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$9000</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="4">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 5</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$20000</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="5">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 6</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$14500</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="6">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 7</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$18500</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="7">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 8</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$25000</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="8">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 9</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$10500</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="9">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 10</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$15000</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="10">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 11</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$8500</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="11">Agregar al carrito</a>
         </div>
       </div>
 
-      <div class="card text-center" style="width: 18rem;" data-toggle="modal" data-target="#modal1">
+
+      <div class="card text-center" style="width: 18rem;">
         <img src="insumos/foto1@2x.png" class="card-img-top" alt="Platillo número 1">
-        <div class="card-body">
-          <h5 class="card-title text-lg-center">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-danger align-self-end">Go somewhere</a>
+        <div class="card-body plato">
+          <h5 class="card-title text-lg-center nombreplato">Plato 12</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
+          </p>
+          <h5 class="fw-bold precioplato">$17400</h5>
+          <div class="form-group row">
+            <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="cantidadplato" name="cantidadplato" min="1" max="10" value="1">
+            </div>
+          </div>
+          <a href="#" class="btn btn-danger input agregar-carrito" data-id="12">Agregar al carrito</a>
         </div>
       </div>
+
+
     
     </div>
   </section>
@@ -225,7 +355,7 @@
     
             <a class="nav-link font-weight-bold" href="mapa.html">MAPA DEL SITIO</a>
             <a class="nav-link font-weight-bold" href="contactenos.html">CONTÁCTENOS</a>
-            <a class="nav-link font-weight-bold" href="contactenos.html">RESERVAS</a>
+            <a class="nav-link font-weight-bold" href="reserva.html">RESERVAS</a>
     
           </div>
     

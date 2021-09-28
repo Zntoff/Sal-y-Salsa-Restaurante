@@ -1,27 +1,4 @@
-/* color del nav(menu)*/
-.navbar-dark
-{
-	background: #F06543;
-}
 
-.main-container{
-	background-color: #fff;
-	
-}
-
-.map-container-3{
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
-}
-.map-container-3 iframe{
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
-}
 
 .main-title{
 	color: #010307;

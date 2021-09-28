@@ -1,19 +1,21 @@
 @media (min-width: 768px) {
 
-	.contacto{
+	.reserva{
 		margin-bottom: 9.7rem;
 	}
 
 }
 
 
-.contacto h1{
+.reserva h1{
 	font-weight: bold;
 	padding: 1.5rem 0;
 }
 
 
-.form-contacto{
+
+
+.form-reserva{
 	background-color: #E8E9EB;
 	padding: 3rem;
 	border-radius: 1rem;
@@ -31,18 +33,3 @@
 	border: none;
 	border-radius: 5px;
 }
-
-.iconos1 {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	width: 200px;
-	height: 30px;
-	background: #F06543;
-	padding-top: 5px;
-	padding-bottom:  10px;
-	border: 0px solid #000000;
-	display:flex;
-	justify-content: center;
-  
-  }
