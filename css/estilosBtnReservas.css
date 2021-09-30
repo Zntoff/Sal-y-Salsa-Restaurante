@@ -1,0 +1,19 @@
+.btn-reservas a {
+    z-index: 2000;
+    display: flex;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 40px;
+    width: 110px;
+    justify-content: center;
+    align-items: center;
+    background: #F06543;
+    color: white;
+}
+
+.btn-reservas a:hover{
+    color: black;
+}
