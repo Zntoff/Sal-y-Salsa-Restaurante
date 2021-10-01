@@ -217,9 +217,6 @@
 <!--fin pie de pagina-->
 
 
-
-
-
 <!--Codigo MDBootstrap -->
 <!-- Main navigation -->
   <!-- jQuery -->
@@ -243,33 +240,19 @@
   <script>
 
       function validacion() {
-
-
         const expresiones = {
-            nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
-            correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+          nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+          correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
         }
-
-
         if(expresiones.nombre.test(document.getElementById("nombre").value) == false){
-
           alert("Carácteres inválidos en el campo Nombre");
-
-
         }
-
         if(expresiones.correo.test(document.getElementById("email").value) == false){
-
           alert("Correo inválido");
-
         }
-
         if(expresiones.nombre.test(document.getElementById("nombre").value) == true && expresiones.correo.test(document.getElementById("email").value) == true){
-
           alert("Mensaje enviado exitosamente");
-
         }
-
       }
 
   </script>

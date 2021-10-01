@@ -8,8 +8,9 @@
 
 
 .reserva h1{
-	font-weight: bold;
-	padding: 1.5rem 0;
+	font-size: 2.5rem !important;
+	font-weight: bold !important;
+	padding: 1.5rem 0 !important;
 }
 
 
