@@ -213,6 +213,7 @@ function enviarEmail(e){
                 <p>Cantidad de personas: ${personas.value}</p>
                 <p>Fecha: ${fecha.value}</p>
                 <p>Hora: ${hora.value}</p>
+                <p>Solicitudes adicionales: ${mensaje.value}</p>
             </td>
         </tr>
 
