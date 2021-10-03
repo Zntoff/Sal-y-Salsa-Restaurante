@@ -145,7 +145,7 @@ function validarFormulario(e){
 
 
     if(expresiones.nombre.test(nombre.value) && expresiones.email.test(email.value) && expresiones.telefono.test(telefono.value)
-    && expresiones.personas.test(personas.value)){
+    && expresiones.personas.test(personas.value) && fecha.value.length > 0){
 
         btnEnviar.disabled = false;
         btnEnviar.classList.remove('cursor-not-allowed', 'opacity-50');
@@ -167,18 +167,7 @@ function mostrarError(mensaje){
 
 }
 
-const estructuraEmailCliente = `
-    <div class="flex flex-col items-center justify-center">
-        <h1 class="text-center text-2xl font-bold text-gray-800">Bienvenido/a a SalySalsa, nos alegra mucho tenerte con nosotros</h1>
-        <p class="text-center text-gray-800">A continuación te compartimos los datos de tu reserva:</p>
-        <p class="text-center text-gray-800">${nombre.value}</p>
-        <p class="text-center text-gray-800">${email.value}</p>
-        <p class="text-center text-gray-800">${telefono.value}</p>
-        <p class="text-center text-gray-800">${personas.value}</p>
-        <p class="text-center text-gray-800">${fecha.value}</p>
-        <p class="text-center text-gray-800">${hora.value}</p>
-    </div>
-`;
+
 
 function enviarEmail(e){
     e.preventDefault();
@@ -205,7 +194,44 @@ function enviarEmail(e){
         To : email.value,
         From : "salysalsarestaurante@gmail.com",
         Subject : "Reserva creada exitosamente",
-        Body : estructuraEmailCliente,
+
+        Body : `
+        <table role="presentation" style="width:100%;border:none;border-spacing:0;">
+        <tr>
+            <td style="padding:20px 20px 20px 20px;text-align:center;font-size:18px;font-weight:bold;">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/NNMBwMY/Logo-Correo.png" alt="Logo-SalySalsa" border="0" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding:20px 20px 20px 20px;text-align:center;font-size:18px;font-weight:bold;">
+                <p>¡Hola ${nombre.value}! nos emociona que hayas elegido a SalySalsa</p>
+                <p>A continuación te compartimos los datos de tu reserva:</p>
+
+                <p>Nombre: ${nombre.value}</p>
+                <p>Email: ${email.value}</p>
+                <p>Teléfono: ${telefono.value}</p>
+                <p>Cantidad de personas: ${personas.value}</p>
+                <p>Fecha: ${fecha.value}</p>
+                <p>Hora: ${hora.value}</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding:20px 20px 20px 20px;text-align:center;font-size:18px;font-weight:bold;">
+                <p>¡Gracias por elegirnos!</p>
+                <p>Restaurante Sal&Salsa Ltda<br>
+                Calle 19 # 7-30, Bogotá<br>
+                reservas@salysalsa.com<br>
+                3123252532<br>
+              </p>
+        
+            </td>
+        </tr>
+        
+        </table> 
+    `,
+
+
         }).then(
             message => alert("Email enviado correctamente")
         );
