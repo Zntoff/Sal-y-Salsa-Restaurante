@@ -167,6 +167,18 @@ function mostrarError(mensaje){
 
 }
 
+const estructuraEmailCliente = `
+    <div class="flex flex-col items-center justify-center">
+        <h1 class="text-center text-2xl font-bold text-gray-800">Bienvenido/a a SalySalsa, nos alegra mucho tenerte con nosotros</h1>
+        <p class="text-center text-gray-800">A continuación te compartimos los datos de tu reserva:</p>
+        <p class="text-center text-gray-800">${nombre.value}</p>
+        <p class="text-center text-gray-800">${email.value}</p>
+        <p class="text-center text-gray-800">${telefono.value}</p>
+        <p class="text-center text-gray-800">${personas.value}</p>
+        <p class="text-center text-gray-800">${fecha.value}</p>
+        <p class="text-center text-gray-800">${hora.value}</p>
+    </div>
+`;
 
 function enviarEmail(e){
     e.preventDefault();
@@ -184,6 +196,17 @@ function enviarEmail(e){
     mensajeExito.remove();
     formulario.reset();
     iniciarApp();
-    }, 5000);
+    }, 3000);
 
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username : "salysalsarestaurante@gmail.com",
+        Password : "loquesea4321",
+        To : email.value,
+        From : "salysalsarestaurante@gmail.com",
+        Subject : "Reserva creada exitosamente",
+        Body : estructuraEmailCliente,
+        }).then(
+            message => alert("Email enviado correctamente")
+        );
 }
