@@ -188,11 +188,9 @@ function enviarEmail(e){
     }, 3000);
 
     Email.send({
-        Host: "smtp.gmail.com",
-        Username : "reservasalysa@gmail.com",
-        Password : "loquesea4321",
+        SecureToken: "676b15d8-c0c8-4aba-88f6-be4917ca0ad9",
         To : email.value, 
-        From : "reservasalysa@gmail.com",
+        From : "reservaensalysalsa@gmail.com",
         Subject : "Reserva creada exitosamente",
 
         Body : `
@@ -236,4 +234,31 @@ function enviarEmail(e){
         }).then(
             message => alert("Email enviado correctamente")
         );
+
+        Email.send({
+            SecureToken: "676b15d8-c0c8-4aba-88f6-be4917ca0ad9",
+            To : "reservaensalysalsa@gmail.com", 
+            From : "reservaensalysalsa@gmail.com",
+            Subject : "Nueva reserva creada",
+    
+            Body : `
+                    
+                    <p>Nombre: ${nombre.value}</p>
+                    <p>Email: ${email.value}</p>
+                    <p>Teléfono: ${telefono.value}</p>
+                    <p>Cantidad de personas: ${personas.value}</p>
+                    <p>Fecha: ${fecha.value}</p>
+                    <p>Hora: ${hora.value}</p>
+                    <p>Solicitudes adicionales: ${mensaje.value}</p>
+             
+        `,
+    
+    
+            }).then(
+                message => alert("Email enviado correctamente")
+            );
+
+
+
+
 }
