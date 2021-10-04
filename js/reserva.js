@@ -189,10 +189,10 @@ function enviarEmail(e){
 
     Email.send({
         Host: "smtp.gmail.com",
-        Username : "salysalsarestaurante@gmail.com",
+        Username : "reservasalysa@gmail.com",
         Password : "loquesea4321",
-        To : email.value,
-        From : "salysalsarestaurante@gmail.com",
+        To : email.value, 
+        From : "reservasalysa@gmail.com",
         Subject : "Reserva creada exitosamente",
 
         Body : `
