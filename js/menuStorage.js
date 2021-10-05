@@ -118,8 +118,8 @@ $(document).ready(function(){
 
     $("#guardar_12").click(function(){
         let total = document.getElementById("valor12").value;
-        let precioPlato12 = total * pr_plato12;
-        localStorage.setItem("cuenta_Plato12", precioPlato12);
+        let precioPlato = total * pr_plato12;
+        localStorage.setItem("cuenta_Plato12", precioPlato);
         localStorage.setItem("cantidad_Plato12", total);
 
         alert(`Usted agregó ${total} porciones del platillo 12`)
@@ -129,17 +129,10 @@ $(document).ready(function(){
 
 // PASANDO DATOS DE LOCALSTORAGE (STRING TO NUMBER :(( )
 
-    let cuenta1 = parseInt(localStorage.getItem("cuenta_Plato1"));
-    let cuenta2 = parseInt(localStorage.getItem("cuenta_Plato2"));
-    let cuenta3 = parseInt(localStorage.getItem("cuenta_Plato3"));
-    let cuenta4 = parseInt(localStorage.getItem("cuenta_Plato4"));
-    let cuenta5 = parseInt(localStorage.getItem("cuenta_Plato5"));
-    let cuenta6 = parseInt(localStorage.getItem("cuenta_Plato6"));
-    let cuenta7 = parseInt(localStorage.getItem("cuenta_Plato7"));
-    let cuenta8 = parseInt(localStorage.getItem("cuenta_Plato8"));
-    let cuenta9 = parseInt(localStorage.getItem("cuenta_Plato9"));
-    let cuenta10 = parseInt(localStorage.getItem("cuenta_Plato10"));
-    let cuenta11 = parseInt(localStorage.getItem("cuenta_Plato11"));
-    let cuenta12 = parseInt(localStorage.getItem("cuenta_Plato12"));
+    function pasandoString(valor){
+        let numero = parseInt(valor).value
+        return numero
+    }
 
+    pasandoString(localStorage.getItem("cantidad_plato12"))
 // SUMANDO TODOS LOS VALORES 
