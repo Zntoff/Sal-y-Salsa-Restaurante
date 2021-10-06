@@ -50,9 +50,9 @@ function addItemCarrito(newItem){
     for(let i = 0; i < carrito.length; i++){
         if (carrito[i].title.trim() === newItem.title){
             carrito[i].cantidad ++;
-            const inputVaule = inputElemento[i];
-            inputVaule ++;
-            console.log(carrito);
+            const inputValue = inputElemento[i];
+            inputValue.value ++;
+            carritoTotal()
             return null;
         }
     }
@@ -62,7 +62,7 @@ function addItemCarrito(newItem){
 }
 
 function renderCarrito(){
-
+    //Esto es practicamente lo que va a imprimir después de cada click // Ya casi acaba esta tortura omeeee, tengo sueño 
     tbody.innerHTML= '';
     carrito.map(item => {
         const tr = document.createElement('tr');
@@ -87,5 +87,42 @@ function renderCarrito(){
 
         tr.innerHTML = content;
         tbody.append(tr);
+
+        tr.querySelector(".delete").addEventListener("click", removeItemCarrito)
+        tr.querySelector(".input__element").addEventListener('change', sumaCantidad)
     })
+    carritoTotal ()
 }
+
+    function carritoTotal (){
+        let total = 0;
+        const itemCartTotal = document.querySelector('.itemCartTotal');
+        carrito.forEach((item) => {
+            const precio = Number(item.price.replace("$", ''))
+            total = total + precio * item.cantidad;
+        })
+
+        itemCartTotal.innerHTML = `Total $ ${total}`
+    }
+
+    function removeItemCarrito(e){
+        const buttonDelete = e.target
+        const tr = buttonDelete.closest(".itemCarrito");
+        const title = tr.querySelector('.title').textContent;
+        for(let i = 0; i<carrito.length; i++){
+            if(carrito[i].title.trim() === title.trim()){
+                carrito.splice(i, 1)
+            }
+        }
+        tr.remove()
+        carritoTotal ()
+    }
+
+    function sumaCantidad (e){
+        const sumaInput = e.target;
+        const tr = sumaInput.closest(".itemCarrito")
+        const title = tr.querySelector('.title').textContent;
+        carrito.forEach(item => {
+            if ()
+        })
+    }
