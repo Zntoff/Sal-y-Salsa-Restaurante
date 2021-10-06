@@ -211,7 +211,7 @@
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1">Ver detalle</a>
           </p>
-          <h5 class="fw-bold precioplato"><span class ="precio">$ 14000</span>/h5>
+          <h5 class="fw-bold precioplato"><span class ="precio">$ 14000</span></h5>
           <div class="form-group row">
             <label for="cantidadplato" class="col-sm-5 col-form-label">Cantidad</label>
             <div class="col-sm-7">
@@ -350,6 +350,8 @@
         </button>
       </div>
       <div class="modal-body">
+
+        <!--Acá inicia la tabla de productos-->
         <table class="table table-dark tabla">
           <thead>
             <tr>
@@ -360,39 +362,8 @@
               
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td class="table__productos  mr-10">
-                <img src="/insumos/foto1@2x.png" alt="">
-                <h6 class="title">Title</h6>
-              </td>
-              <td class="table__precio">
-                <p>$ dinero</p>
-              </td>
-              <td class="table__cantidad">
-                <input type="number" min="1" max="10" value="1">
-                <button class="delete btn btn-danger btn-sm">X
-                </button>
-              </td>
-             </tr>
-
-             <tr>
-              <th scope="row">1</th>
-              <td class="table__productos  mr-10">
-                <img src="/insumos/foto1@2x.png" alt="">
-                <h6 class="title">Title</h6>
-              </td>
-              <td class="table__precio">
-                <p>$ dinero</p>
-              </td>
-              <td class="table__cantidad">
-                <input type="number" min="1" max="10" value="1">
-                <button class="delete btn btn-danger btn-sm">X
-                </button>
-              </td>
-             </tr>
-            
+          <tbody class="tbody">
+         
           </tbody>
         </table>
 
