@@ -2,3 +2,37 @@
 	font-weight: bold;
 	padding: 1.5rem 0;
 }
+.table__productos {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.table__productos > img {
+	width: 5rem;
+	object-fit: contain;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.table__precio{
+	justify-content: center;
+}
+
+
+
+.table__cantidad > input{
+	width: 50px;
+	border: none;
+	outline: 0;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	justify-content: center;
+}
+
+.contenedor-final{
+	background-color: #000;
+	border-radius: 5px;
+}
