@@ -59,6 +59,12 @@ function addItemCarrito(newItem){
     //Aqui hacemos un push del objeto al carrito y hacemos el renderizado
     carrito.push(newItem);
     renderCarrito();
+    llamarAlerta()
+}
+
+function llamarAlerta(){
+    const agregado = "Producto agregado correctamente"
+    alert(agregado)
 }
 
 function renderCarrito(){
@@ -117,8 +123,13 @@ function renderCarrito(){
         }
         tr.remove()
         carritoTotal ()
+        removido()
     }
 
+    function removido (){
+        const removido = "Elemento eliminado con éxito"
+        alert (removido)
+    }
 
 
     
