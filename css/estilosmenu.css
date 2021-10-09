@@ -26,6 +26,14 @@
 	color: #000
 }
 
+.alert{
+	z-index: 100;
+	margin-top: 1rem;
+}
+.hide{
+	display:none
+}
+
 /* modal custom */
 
 .modal-header{

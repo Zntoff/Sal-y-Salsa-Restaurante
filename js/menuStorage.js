@@ -103,6 +103,7 @@ function renderCarrito(){
         })
 
         itemCartTotal.innerHTML = `Total $ ${total}`
+        addLocalStorage()
     }
 
     function removeItemCarrito(e){
@@ -118,11 +119,30 @@ function renderCarrito(){
         carritoTotal ()
     }
 
+
+
+    
     function sumaCantidad (e){
         const sumaInput = e.target;
         const tr = sumaInput.closest(".itemCarrito")
         const title = tr.querySelector('.title').textContent;
         carrito.forEach(item => {
-            if ()
+            if (item.title.trim() === title){
+                sumaInput.value < 1 ? (sumaInput.value = 1) : sumaInput.value;
+                item.cantidad = sumaInput.value
+                carritoTotal ()
+            }
         })
+    }
+
+    function addLocalStorage(){
+        localStorage.setItem('carrito', JSON.stringify(carrito))
+    }
+    
+    window.onload = function(){
+        const storage = JSON.parse(localStorage.getItem('carrito'));
+        if (storage){
+            carrito = storage;
+            renderCarrito()
+        }
     }
