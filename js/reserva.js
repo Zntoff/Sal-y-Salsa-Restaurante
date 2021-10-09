@@ -213,16 +213,6 @@ function enviarEmail(e){
                 <p>Hora: ${hora.value}</p>
                 <p>Solicitudes adicionales: ${mensaje.value}</p>
 
-                /* Modificado por Edison */
-                <td class="table__productos  mr-10">
-          <img src= ${item.img} alt="">
-          <h6 class="title">${item.title}</h6>
-        </td>
-        <td class="table__precio">
-          <p>${item.price}</p>
-        </td>
-            </td>
-        </tr>
 
         <tr>
             <td style="padding:20px 20px 20px 20px;text-align:center;font-size:18px;font-weight:bold;">
